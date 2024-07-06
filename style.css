@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('BrainTumor.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px ;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styles */
+.title {
+    margin-bottom: 20px;
+    color: #ffffff; /* Indigo */
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Information Box Styles */
+.info-box {
+    background-color: #e6e6fa; /* Lavender */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 20px rgba(246, 241, 241, 0.1);
+    text-align: left;
+}
+
+.info-text {
+    color: #ffffff; /* Indigo */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Upload Form Styles */
+.upload-form {
+    background-color: #d2cfdf; /* Moccasin */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(246, 241, 241, 0.1);
+    text-align: left;
+}
+
+.upload-label {
+    font-weight: bold;
+    color: #ffffff; /* Indigo */
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.upload-input {
+    padding: 10px;
+    border: 1px solid #4b0082; /* Indigo */
+    border-radius: 5px;
+    color: #4b0082; /* Indigo */
+    background-color: #fff0f5; /* Lavender blush */
+    width: calc(100% - 22px);
+    max-width: 400px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4b0082; /* Indigo */
+    width: 0;
+    border-radius: 10px;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    margin-left: 310px;
+    background-color: #9555f4; /* Hot pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.upload-button:hover {
+    background-color: #6c1dbf; /* Deep pink */
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer a {
+    color: #4b0082; /* Indigo */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* User Details Styles */
+.user-details {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.user-details h2 {
+    color: #4b0082; /* Indigo */
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.user-details p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+/* Result Message Styles */
+.result-message {
+    font-size: 26px;
+    color: #ffffff; 
+    margin-bottom: 30px;
+}
+
+/* Result Image Styles */
+.result-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Download Button Styles */
+.btn-back, .btn-download {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-back {
+    background-color: #ff69b4; /* Hot pink */
+    color: #fff;
+    margin-right: 20px;
+}
+
+.btn-download {
+    background-color: #4b0082; /* Indigo */
+    color: #fff;
+}
+
+.btn-back:hover {
+    background-color: #ff1493; /* Deep pink */
+}
+
+.btn-download:hover {
+    background-color: #800080; /* Purple */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Classification Result</title>
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Brain Tumor Classification Result</h1>
+        
+        <!-- User Details -->
+        <div class="user-details">
+            <h2>User Details</h2>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Gender:</strong> {{ gender }}</p>
+            <p><strong>Age:</strong> {{ age }}</p>
+        </div>
+        
+        <!-- Result Message -->
+        <p class="result-message">{{ result_message }}</p>
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <a href="/" class="btn-back">Back to Upload</a>
+            <a href="{{ url_for('download_report', pdf_path=pdf_path) }}" class="btn-download">Download Report</a>
+        </div>
+    </div>
+    
+    <!-- Add the empty div here -->
+    <div id="download-pdf"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
